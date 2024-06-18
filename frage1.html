@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatToFlix - Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+	<body class="quiz-background">
+		<header class="fixed-header">
+			<div id="logo">
+			  <a href="index.html">
+				<img src="img/logo.png" alt="WhatToFlix Logo" />
+			  </a>
+			</div>
+			<nav>
+			  <input type="checkbox" id="check" aria-label="Menü" />
+			  <label for="check" class="open-menu">
+				<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+				<span class="sr-only">Menü öffnen</span>
+			  </label>
+			  <ul class="main-nav">
+				<li><a href="/beliebte-filme.html">Beliebte Filme</a></li>
+				<li><a href="/watchlist.html">Meine Liste</a></li>
+				<label for="check" class="close-menu">
+				  <i class="fa fa-close fa-3x" aria-hidden="true"></i>
+				  <span class="sr-only">Menü schließen</span>
+				</label>
+			  </ul>
+			</nav>
+		  </header>
+
+		<main>
+			<div class="main-container">
+				<div id="question-container" data-question="1" >
+					<h1 class="frage">Wie sehr hast du Lust auf <span class="highlight">Action?</span></h1>
+					<div class="profiles">
+						<div class="profile">
+							<button class="answer" data-value="1">
+								<img src="img/antworten/frage_1_1.jpg" alt="Wütender Charakter">
+								<p class="benutzername">Gar nicht</p>
+							</button>
+						</div>
+						<div class="profile">
+							<button class="answer" data-value="2">
+								<img src="img/antworten/frage_1_2.jpg" alt="Ängstlicher Charakter">
+								<p class="benutzername">Wenig</p>
+							</button>	
+						</div>
+						<div class="profile">
+							<button class="answer" data-value="3">
+								<img src="img/antworten/frage_1_3.jpg" alt="Nachdenklicher Charakter">
+								<p class="benutzername">Neutral</p>
+							</button>
+						</div>
+						<div class="profile">
+							<button class="answer" data-value="4">
+								<img src="img/antworten/frage_1_4.jpg" alt="Zustimmender Charakter">
+								<p class="benutzername">Etwas</p>
+							</button>
+						</div>
+						<div class="profile">
+							<button class="answer" data-value="5">
+								<img src="img/antworten/frage_1_5.jpg" alt="Freundlicher Charakter">
+								<p class="benutzername">Sehr</p>
+							</button>
+						</div>
+					</div>
+			</div>
+		</main>
+
+
+    </div>
+	<script src="js/script.js"></script>
+    </body>
+
+</html>

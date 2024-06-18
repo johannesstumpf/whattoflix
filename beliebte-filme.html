@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatToFlix - Top 5 Filme</title>
+    <link rel="stylesheet" href="/css/beliebte-filme.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="top5-background">
+    <header class="fixed-header">
+      <div id="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="WhatToFlix Logo" />
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="check" aria-label="Menü" />
+        <label for="check" class="open-menu">
+          <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+          <span class="sr-only">Menü öffnen</span>
+        </label>
+        <ul class="main-nav">
+          <li><a href="/beliebte-filme.html">Beliebte Filme</a></li>
+          <li><a href="/watchlist.html">Meine Liste</a></li>
+          <label for="check" class="close-menu">
+            <i class="fa fa-close fa-3x" aria-hidden="true"></i>
+            <span class="sr-only">Menü schließen</span>
+          </label>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-background">
+      <div class="hero-content">
+        <h1 class="title">
+          Deine <span class="highlight">Lieblings</span>filme
+        </h1>
+      </div>
+    </div>
+
+    <main class="background">
+      <div class="main-container">
+        <div id="question-container" data-question="1"></div>
+        <div id="popularMoviesContainer" class="movies-grid"></div>
+        <template id="popularMoviesItemTemplate">
+          <div class="movie-item">
+            <img class="movie-image" alt="Bild des Films" />
+            <h2 class="movie-title">Test</h2>
+            <p class="movie-description"></p>
+            <a class="show-more-link" href="#">Mehr anzeigen</a>
+            <a class="show-less-link" href="#" style="display: none"
+              >Weniger anzeigen</a
+            >
+            <a class="movie-link" href="#" target="_blank">
+              Film öffnen
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </template>
+      </div>
+    </main>
+    <script src="/js/global.js"></script>
+    <script src="/js/popular.js"></script>
+  </body>
+</html>

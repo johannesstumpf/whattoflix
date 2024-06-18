@@ -1,0 +1,138 @@
+/* Farbmanagement auf basis von: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+  --primary-color: #e50914;
+  --secondary-color: rgba(90, 90, 90, 0.6);
+  --background-overlay: rgba(0, 0, 0, 0.8);
+  --white-color: #ffffff;
+  --light-grey: #e5e5e5;
+  --menu-background: #0f0f0f;
+  --color1: #ffffff;
+}
+
+@font-face {
+  font-family: "Netflix Bold";
+  src: url(/fonts/Netflix_Sans_Bold.otf);
+}
+
+@font-face {
+  font-family: "Netflix Medium";
+  src: url(/fonts/Netflix_Sans_Medium.otf);
+}
+
+@font-face {
+  font-family: "Netflix Light";
+  src: url(/fonts/Netflix_Sans_Light.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--white-color);
+}
+
+h1 {
+  font-family: "Netflix Bold";
+}
+
+h2 {
+  font-family: "Netflix Medium";
+}
+
+p {
+  font-family: "Netflix Light";
+}
+
+a {
+  font-family: Netflix Light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Startseite */
+.text-start {
+  font-size: 20dvh;
+  margin: 2.5rem;
+}
+
+.paragraph-start {
+  font-size: 2.5rem;
+  margin: 2.5rem;
+}
+
+.start-background {
+  background-image: url(/img/background_startseite.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--background-overlay);
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Buttons */
+.primary-button,
+.secondary-button {
+  padding: 0.625rem 1.25rem;
+  border: 0;
+  font-family: "Netflix Light";
+  font-size: 2.5rem;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  margin: 0 2.5rem;
+}
+
+.primary-button:hover {
+  background-color: rgba(229, 9, 20, 0.7);
+}
+
+.secondary-button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  margin: 0.5rem 2.5rem;
+}
+
+.secondary-button:hover {
+  background-color: rgba(64, 64, 64, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .text-start {
+    font-size: 5rem;
+    margin: 1rem;
+  }
+
+  .paragraph-start {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 1.5rem;
+    width: 15rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 1.5rem;
+    width: 15rem;
+    margin: 1rem auto;
+    display: block;
+  }
+}

@@ -1,0 +1,384 @@
+/* Farbmanagement auf basis von: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+  --primary-color: #e50914;
+  --secondary-color: rgba(90, 90, 90, 0.6);
+  --background-overlay: rgba(0, 0, 0, 0.8);
+  --white-color: #ffffff;
+  --light-grey: #e5e5e5;
+  --menu-background: #0f0f0f;
+  --color1: #ffffff;
+  --background-color: #0f0f0f;
+  --grey: #b9b9b9;
+}
+
+/* Typografie und Farben */
+@font-face {
+  font-family: Netflix Bold;
+  src: url(/fonts/Netflix_Sans_Bold.otf);
+}
+
+@font-face {
+  font-family: Netflix Medium;
+  src: url(/fonts/Netflix_Sans_Medium.otf);
+}
+
+@font-face {
+  font-family: Netflix Light;
+  src: url(/fonts/Netflix_Sans_Light.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--white-color);
+}
+
+h1 {
+  font-family: "Netflix Bold";
+}
+
+h2 {
+  font-family: "Netflix Medium";
+}
+
+p {
+  font-family: "Netflix Light";
+}
+
+a {
+  font-family: Netflix Light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-background {
+  background-color: var(--background-color);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.slider {
+  zoom: 60%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--white-color);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#tranding {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+.centered-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.movie-titel {
+  color: var(--white-color);
+  font-size: calc(2rem + 2vw);
+}
+
+.no-movie {
+  color: var(--grey);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.625rem 1.25rem;
+  width: 20rem;
+  border: 0;
+  font-family: "Netflix Light";
+  font-size: 2.5rem;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  margin: 0rem 2.5rem;
+}
+
+.primary-button:hover {
+  background-color: rgba(229, 9, 20, 0.7);
+}
+
+.secondary-button {
+  background-color: #fbd900;
+  color: var(--background-color);
+  margin: 0.5rem 2.5rem;
+}
+
+.secondary-button:hover {
+  background-color: #fbd900cb;
+}
+
+.centered-title a {
+  display: inline-block;
+  margin-top: 3rem; /* Adjust this value as needed */
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.625rem 1.25rem;
+  width: 20rem;
+  border: 0;
+  font-family: "Netflix Light";
+  font-size: 2.5rem;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  margin: 0rem 2.5rem;
+}
+
+.primary-button:hover {
+  background-color: rgba(229, 9, 20, 0.7);
+}
+
+.secondary-button {
+  background-color: #fbd900;
+  color: var(--background-color);
+  margin: 0.5rem 2.5rem;
+}
+
+.secondary-button:hover {
+  background-color: #fbd900cb;
+}
+
+.tranding-slider-control .slider-arrow {
+  background: var(--grey);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: "";
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(215, 215, 215, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--light-grey);
+}
+
+.tranding-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+.fa-solid.fa-arrow-up-right-from-square {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-0%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tranding-slider-control .swiper-button-next,
+  .tranding-slider-control .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .tranding-slider-control .swiper-button-next ion-icon,
+  .tranding-slider-control .swiper-button-prev ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-0%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-10%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .primary-button,
+  .secondary-button {
+    width: 15rem;
+    font-size: 2rem;
+  }
+
+  .primary-button {
+    margin: 0.5rem;
+  }
+
+  .secondary-button {
+    margin: 0.5rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .primary-button,
+  .secondary-button {
+    width: 14rem;
+    font-size: 1.8rem;
+  }
+
+  .primary-button {
+    margin: 0.5rem;
+  }
+
+  .secondary-button {
+    margin: 0.5rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+}

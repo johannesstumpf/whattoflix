@@ -1,0 +1,152 @@
+{
+  "Godzilla": {
+    "movie-title": "Godzilla",
+    "movie-description": "In diesem Film erwacht die riesige Kreatur Godzilla aus ihrem jahrzehntelangen Schlaf. Sie kämpft gegen andere riesige Monster, um die Welt vor der Zerstörung zu retten. Der Film zeigt beeindruckende Spezialeffekte und epische Schlachten. Wissenschaftler und Militärs arbeiten zusammen, um die Bedrohung zu stoppen. Am Ende stellt sich heraus, dass Godzilla eine Art Beschützer der Erde ist.",
+    "movie-image": "../img/filme/godzilla.jpg",
+    "movie-link": "https://www.netflix.com/de/title/70297757?s=i&trkid=258593161&vlang=de&clip=81904479"
+  },
+  "Spiderman": {
+    "movie-title": "Spiderman",
+    "movie-description": "Der Teenager Peter Parker wird nach einem Spinnenbiss zu Spiderman. Er entdeckt seine neuen Kräfte und beschließt, sie zum Schutz seiner Stadt zu nutzen. Mit seinem Alter Ego kämpft er gegen verschiedene Bösewichte, darunter der grüne Kobold. Gleichzeitig muss er das normale Leben eines Schülers meistern. Der Film zeigt die Herausforderungen und Abenteuer eines jugendlichen Superhelden.",
+    "movie-image": "../img/filme/spiderman.jpg",
+    "movie-link": "https://www.netflix.com/de/title/81055822?s=i&trkid=258593161&vlang=de"
+  },
+  "Kong: Skull Island": {
+    "movie-title": "Kong: Skull Island",
+    "movie-description": "Ein Team von Wissenschaftlern und Soldaten entdeckt eine unbekannte Insel. Dort begegnen sie dem riesigen Affen Kong, der die Insel vor gefährlichen Kreaturen schützt. Der Film kombiniert Abenteuer, Action und beeindruckende Spezialeffekte. Die Charaktere müssen ums Überleben kämpfen und die Geheimnisse der Insel enthüllen. Schließlich erkennen sie, dass Kong ein entscheidender Beschützer ist.",
+    "movie-image": "../img/filme/kong_skull_island.jpg",
+    "movie-link": "https://www.netflix.com/de/title/80139562?s=i&trkid=258593161&vlang=de&clip=81035296"
+  },
+  "Badland Hunters": {
+    "movie-title": "Badland Hunters",
+    "movie-description": "In einer postapokalyptischen Welt kämpfen Überlebende um ihr Dasein. Eine Gruppe von Jägern sucht nach Ressourcen und Schutz in den Ödlanden. Sie müssen gegen gefährliche Kreaturen und feindliche Gruppen bestehen. Der Film zeigt die Härte und das Überleben in einer zerstörten Welt. Freundschaft und Verrat spielen eine zentrale Rolle in ihrem Überlebenskampf.",
+    "movie-image": "../img/filme/badland_hunters.jpg",
+    "movie-link": "https://www.netflix.com/de/title/81721676?s=i&trkid=258593161&vlang=de&clip=81756619"
+  },
+  "Matrix": {
+    "movie-title": "Matrix",
+    "movie-description": "Neo entdeckt, dass die Realität, die er kennt, eine Simulation ist. Er schließt sich einer Gruppe von Rebellen an, die gegen die Maschinen kämpfen, die die Menschheit versklaven. Der Film revolutionierte das Science-Fiction-Genre mit seinen innovativen Spezialeffekten und philosophischen Fragen. Neo entwickelt sich zum Auserwählten, der die Menschheit befreien soll. Action, Technik und tiefgründige Themen machen den Film zu einem Klassiker.",
+    "movie-image": "../img/filme/matrix.jpg",
+    "movie-link": "https://www.netflix.com/de/title/20557937?s=i&trkid=258593161&vlang=de&clip=81147794"
+  },
+  "Kung Fu Panda": {
+    "movie-title": "Kung Fu Panda",
+    "movie-description": "Po, ein tollpatschiger Panda, träumt davon, ein Kung-Fu-Meister zu werden. Als er zufällig als der Drachenkrieger auserwählt wird, muss er sich seiner größten Herausforderung stellen. Mit Hilfe seiner neuen Freunde und Lehrer lernt er, an sich selbst zu glauben. Der Film ist eine humorvolle und herzerwärmende Geschichte über Mut und Selbstfindung. Mit beeindruckenden Animationen und spannenden Kämpfen begeistert er Jung und Alt.",
+    "movie-image": "../img/filme/kung_fu_panda.jpg",
+    "movie-link": "https://www.amazon.de/Kung-Fu-Panda-Jack-Black/dp/B00FYWNZAQ/ref=sr_1_3?crid=3K9LQOEKNTWDD&dib=eyJ2IjoiMSJ9.3gY4SyBxO0AiAmfa_pF2JJhzOY_VPPYrlFuMQsdX5VGQU4g82nY86UOhHbe8KIAgSiENRpmze1B26N_bFoIU8xYp4NbmZ5urfPb5ESxRQ1CjK7RakDhJ8XO5l0SW18MM_sXZCoqQLV0x_wTKcJZZbNBoJXGWlTYjzZ_9WuHRxpMlFAajKDrnziVrxpbb5UBwDw7gZmnBJzGutfDgkeBZ4STak7hzEVNFS_8Z7exsm3g.p1V0pSrttIM9H_kFB7xr3uphnO7z8HYvSWR--iBg6RY&dib_tag=se&keywords=kung+fu+panda&qid=1718665095&s=instant-video&sprefix=kung+fu%2Cinstant-video%2C156&sr=1-3"
+  },
+  "Shrek": {
+    "movie-title": "Shrek",
+    "movie-description": "Der Oger Shrek lebt zurückgezogen in einem Sumpf, bis sein Frieden durch eine Gruppe von Märchenwesen gestört wird. Um seine Ruhe zurückzugewinnen, macht er sich auf den Weg, Prinzessin Fiona zu retten. Dabei schließt er Freundschaften und entdeckt die wahre Bedeutung von Liebe und Freundschaft. Der Film kombiniert Humor, Abenteuer und eine ungewöhnliche Liebesgeschichte. Die modernen Märchenelemente machen ihn zu einem zeitlosen Klassiker.",
+    "movie-image": "../img/filme/shrek.jpg",
+    "movie-link": "https://www.amazon.de/Shrek-OV-Andrew-Adamson/dp/B07RTPCXYN/ref=sr_1_5?dib=eyJ2IjoiMSJ9.8KawJH7w-QEuMsABY0DuTIaa8U0VCIFAtCMOALt0NmwgRJroELns7sLsp3XjocYy6aciHi0vpFrQRiPGPFzyeaXq0HOaXKVBXhUBRfY8oG8oeRU8GGA-YYUmQAYc-_oNVPX8OJNlcL6WdhAh_6710ZJxr3-veMu_CUtcMl8DpX94nUwj5I0zRi9UhxT3DQIoeoVWYtxJH8FzW24-veVv8ZYqejQtSbmM5OEhs1DYF1huc1F4aky5cHZurnAyFTronQC1yyGRC04c_sKpVDH1L-IdK5j_TL77pGa4KTA_YRg.JrlPbvoXdbowqJTSklDUx87m06hBlIRPMJZ3qslKoCc&dib_tag=se&keywords=shrek&qid=1718664992&sr=8-5"
+  },
+  "The Wolf of Wallstreet": {
+    "movie-title": "The Wolf of Wallstreet",
+    "movie-description": "Jordan Belfort steigt zum erfolgreichen Börsenmakler auf und lebt ein Leben im Überfluss. Der Film zeigt seinen rasanten Aufstieg und seinen tiefen Fall, geprägt von Drogen, Korruption und exzessivem Reichtum. Leonardo DiCaprio brilliert in der Hauptrolle, die auf einer wahren Geschichte basiert. Die Regie von Martin Scorsese fängt die Exzesse und den Wahnsinn der Finanzwelt ein. Der Film ist sowohl unterhaltsam als auch kritisch gegenüber der Wall Street.",
+    "movie-image": "../img/filme/the_wolf_of_walstreet.jpg",
+    "movie-link": "https://www.netflix.com/de/title/70266676?s=i&trkid=258593161&vlang=de&clip=81722425"
+  },
+  "Zurueck in die Zukunft": {
+    "movie-title": "Zurueck in die Zukunft",
+    "movie-description": "Der Teenager Marty McFly reist mit einer Zeitmaschine, die von Dr. Emmett Brown gebaut wurde, in die Vergangenheit. Dort trifft er auf seine jungen Eltern und muss sicherstellen, dass sie sich verlieben, um seine eigene Existenz zu sichern. Der Film ist ein Klassiker des Science-Fiction-Genres mit humorvollen und spannenden Momenten. Michael J. Fox und Christopher Lloyd liefern unvergessliche Performances. Die Handlung ist sowohl aufregend als auch herzerwärmend.",
+    "movie-image": "../img/filme/zurueck_in_die_zukunft.jpg",
+    "movie-link": "https://www.netflix.com/de/title/60010110?s=i&trkid=258593161&vlang=de&clip=81040596"
+  },
+  "Ted": {
+    "movie-title": "Ted",
+    "movie-description": "John Bennett's Kindheitswunsch lässt seinen Teddybär Ted zum Leben erwachen. Jahre später leben John und Ted als Erwachsene zusammen und erleben zahlreiche chaotische Abenteuer. Die Komödie, die von Seth MacFarlane geschaffen wurde, ist bekannt für ihren derben Humor und charmante Momente. Ted bleibt ein treuer Freund, auch wenn er oft für Unfug sorgt. Die Geschichte zeigt die Herausforderungen des Erwachsenwerdens und der Freundschaft.",
+    "movie-image": "../img/filme/ted.jpg",
+    "movie-link": "https://www.netflix.com/de/title/70218756?s=i&trkid=258593161&vlang=de&clip=81035131"
+  },
+  "Fifty Shades of Grey": {
+    "movie-title": "Fifty Shades of Grey",
+    "movie-description": "Die schüchterne Studentin Anastasia Steele trifft auf den reichen Unternehmer Christian Grey. Ihre Begegnung führt zu einer intensiven und kontroversen Liebesbeziehung. Der Film ist bekannt für seine erotischen Szenen und die Erforschung von Macht und Kontrolle in Beziehungen. Während Anastasia versucht, Christian besser zu verstehen, entdeckt sie seine dunklen Geheimnisse. Der Film basiert auf dem Bestseller-Roman von E.L. James.",
+    "movie-image": "../img/filme/fifty_shades_of_grey.jpg",
+    "movie-link": "https://www.netflix.com/de/title/80131194?s=i&trkid=258593161&vlang=de&clip=81723951"
+  },
+  "Twilight": {
+    "movie-title": "Twilight",
+    "movie-description": "Die schüchterne Schülerin Bella Swan zieht nach Forks und verliebt sich in den geheimnisvollen Edward Cullen. Edward ist ein Vampir, und ihre Beziehung bringt beide in große Gefahr. Der Film basiert auf dem Bestseller von Stephenie Meyer und kombiniert Romantik, Fantasy und Spannung. Bella muss sich zwischen ihrer Liebe zu Edward und ihrem eigenen Überleben entscheiden. Die Serie wurde zu einem kulturellen Phänomen und führte zu mehreren Fortsetzungen.",
+    "movie-image": "../img/filme/twilight.jpg",
+    "movie-link": "https://www.amazon.de/Twilight-Biss-zum-Morgengrauen-dt/dp/B00KAXMM3U/ref=sr_1_3?crid=WYKPE48YPN72&dib=eyJ2IjoiMSJ9.66XTzDpfrPn3orxh_rQbmq8L7zA38R2iZtv1FdoMVGeayZbU0HgY62YVz7zzZ38GiEwrGz3K7YftamwcmoONzOcQySzLk3HpqcNetoLb96xtuF7J5Hy9kercLdlWhl3bMuxxoVxXsD5QtQJENHRhfoKQhsdWBwtcA5bNIqBi48UIYBj05xt9Q4kMvG_xh1AT4Rs9YRoNnCHyZ74kA2W8kKARx6KeO4h39NPYCDsk29HceRRxRkkN-4x5iQ9NfRmmUCEYjl6MmJcEzibgEl9S74jql73UlkCJjP3AU_guZZo._nuzN7ycGaV0y84tO8uxruZoGlCKl1-XgDjVYMfJkV0&dib_tag=se&keywords=twilight&qid=1718665159&sprefix=twil%2Caps%2C175&sr=8-3"
+  },
+  "Breaking Dawn": {
+    "movie-title": "Breaking Dawn",
+    "movie-description": "Im abschließenden Kapitel der Twilight-Saga heiraten Bella und Edward und erwarten ein Kind. Die Geburt ihres Kindes bringt jedoch unvorhergesehene Komplikationen und Bedrohungen. Der Film zeigt die dramatischen Veränderungen in Bellas Leben und ihre Transformation. Es kommt zu einem epischen Showdown zwischen Vampiren und Werwölfen. Die Serie endet mit einem spannenden und emotionalen Finale.",
+    "movie-image": "../img/filme/breaking_dawn.jpg",
+    "movie-link": "https://www.amazon.de/Breaking-Dawn-Biss-Ende-Nacht/dp/B00ILNTQJY/ref=sr_1_1?crid=2T79RK4J1KI22&dib=eyJ2IjoiMSJ9.jBGAoYe2YP61mvhh0yPRKYxe6yuNH8rmEYptJgPZzvuxM4usCNPwo59M86JHYpv06zoxnUwvpoNNFnh4rwbunftOO7Iqkm58KZsFJmre1gteGOpXHpPDyD87S-zJjm2BhEbWTlJXXgFYXx-EGYTxA_wSJCdLjRBpuYCkqDTHGAsXLgrLg6EWn4sOyG4w5DF_pRiWKG67pcrtV4W16RX5Tr6GNphI6YOIvWe8KPDJo1Q.9jP4POP7IEE4H0CzWjbPnl43EmSRkENYom7qRTAnceE&dib_tag=se&keywords=breaking+dawn&qid=1718665203&s=instant-video&sprefix=breaking%2Cinstant-video%2C160&sr=1-1"
+  },
+  "Eclipse": {
+    "movie-title": "Eclipse",
+    "movie-description": "In diesem Teil der Twilight-Saga steht Bella zwischen zwei Welten: der der Vampire und der der Werwölfe. Sie muss sich entscheiden, ob sie bei Edward bleibt oder eine Beziehung mit Jacob eingeht. Gleichzeitig bedroht eine neue Armee von Vampiren ihre Heimatstadt Forks. Der Film ist voller Spannung, Romantik und Action. Bellas Wahl hat weitreichende Konsequenzen für alle Beteiligten.",
+    "movie-image": "../img/filme/eclipse.jpg",
+    "movie-link": "https://www.amazon.de/Eclipse-Biss-zum-Abendrot-dt/dp/B00FZITI6Y/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2OB65CBDZWY1B&dib=eyJ2IjoiMSJ9.-Y00vxZ9079VoAIm4Zk8Me9hsPQk94qFAXI-1UTcNfvJ1s8Vk_yKmIXOAa1bQVOJGTAP5av7A-Tia_pAMxXxjJ7RdRlx2Ckyk8Hkjb00BwuPBr8qJeF98_27uh8929MQsLYyrmKWgE-DfLtsQu5l0B6X-yQXHmUv0xpzoKAweuumz0gdO7GFFGOpLFlOla13AfBX_4uU1ao9hhjWotDMZ3q13d8bU5BfBBey4BKJudU.raHs2warJwDMaF7g8gsUk7j9BaZE0hHTYeR3KSdwCpo&dib_tag=se&keywords=eclipse&qid=1718665254&s=instant-video&sprefix=eclips%2Cinstant-video%2C235&sr=1-1"
+  },
+  "Through my Window": {
+    "movie-title": "Through my Window",
+    "movie-description": "Raquel ist heimlich in ihren attraktiven Nachbarn Ares verliebt. Ohne es zu wissen, beobachten sie sich gegenseitig durchs Fenster. Als ihre Beziehung intensiver wird, kommen Geheimnisse und unerwartete Herausforderungen ans Licht. Der Film kombiniert Romantik und Dramatik und zeigt die Komplexität junger Liebe. Raquel muss sich zwischen ihrem Herzen und den Realitäten des Lebens entscheiden.",
+    "movie-image": "../img/filme/through_my_window.jpg",
+    "movie-link": "https://www.netflix.com/de/title/81388078?s=i&trkid=258593161&vlang=de&clip=81522370"
+  },
+  "Birdbox": {
+    "movie-title": "Birdbox",
+    "movie-description": "Eine unsichtbare Bedrohung zwingt die Menschheit, die Augen zu schließen, um zu überleben. Malorie, gespielt von Sandra Bullock, kämpft darum, ihre Kinder in Sicherheit zu bringen. Der Film zeigt eine postapokalyptische Welt voller Spannung und Schrecken. Überleben und Vertrauen stehen im Mittelpunkt der Handlung. Der Film basiert auf dem gleichnamigen Roman von Josh Malerman.",
+    "movie-image": "../img/filme/birdbox.jpg",
+    "movie-link": "https://www.netflix.com/de/title/80196789?s=i&trkid=258593161&vlang=de&clip=81047713"
+  },
+  "Split": {
+    "movie-title": "Split",
+    "movie-description": "Kevin Wendell Crumb leidet unter einer dissoziativen Identitätsstörung und besitzt 23 verschiedene Persönlichkeiten. Eine seiner Persönlichkeiten entführt drei Mädchen, die gegen die dunkleren Seiten von Kevin kämpfen müssen. Der Film ist ein spannender Psychothriller, der die Vielseitigkeit von James McAvoy zeigt. M. Night Shyamalan inszeniert die Geschichte mit einer unheimlichen Atmosphäre und überraschenden Wendungen. Der Film endet mit einer unerwarteten Verbindung zu einem anderen Shyamalan-Werk.",
+    "movie-image": "../img/filme/split.jpg",
+    "movie-link": "https://www.amazon.de/Split-4K-UHD-James-McAvoy/dp/B07XH2WZZW/ref=sr_1_1?__mk_de_DE=ÅMÅŽÕÑ&crid=1247EV18US6ZV&dib=eyJ2IjoiMSJ9.cE3OPnhYJEjCy_N5fPyIKljxExptx5iuJ-bGP5SdWNfEQvFHb5h6mzADxmUBzqn3CogxioXplv3PRCwgQ2qaPt9NRa6KnnrRhr_PL6etHgJHcgpTq0q1WICcaUmATCJFDI8b3P8ySEOFT5Kpc_Pe5Z9R91m2T-ilWyqJwKycgjoF36Q2D7BnegCqfrjHZcOQ9WF2Dl1qIcpuFcN2RxtuuFot1s9jJtJsyH4HLbcsxZw.Y0fcb4zK1zpfNg1Fymnu0SVhsWKPmmUXD8xxh0YzT0o&dib_tag=se&keywords=split&qid=1718665311&s=instant-video&sprefix=spli%2Cinstant-video%2C177&sr=1-1"
+  },
+  "Gesetz der Rache": {
+    "movie-title": "Gesetz der Rache",
+    "movie-description": "Clyde Shelton verliert seine Familie durch ein Verbrechen und sucht Gerechtigkeit. Als das Rechtssystem versagt, nimmt er das Gesetz in die eigenen Hände und plant eine Reihe von Vergeltungsmaßnahmen. Der Film ist ein intensiver Thriller, der die moralischen Grauzonen von Rache und Gerechtigkeit erforscht. Gerard Butler spielt den entschlossenen Shelton, während Jamie Foxx den Staatsanwalt darstellt. Die Handlung ist spannend und voller unerwarteter Wendungen.",
+    "movie-image": "../img/filme/gesetz_der_rache.jpg",
+    "movie-link": "https://www.netflix.com/de/title/70116679?s=i&trkid=258593161&vlang=de"
+  },
+  "San Andreas": {
+    "movie-title": "San Andreas",
+    "movie-description": "Ein verheerendes Erdbeben erschüttert Kalifornien, und der Rettungspilot Ray Gaines begibt sich auf eine gefährliche Mission, um seine Familie zu retten. Der Film zeigt atemberaubende Spezialeffekte und actiongeladene Rettungsaktionen. Dwayne Johnson spielt die Hauptrolle und bringt die nötige Mischung aus Stärke und Emotionen. Die Handlung konzentriert sich auf Überlebenswillen und familiäre Bindungen. Der Film ist ein fesselndes Katastrophen-Abenteuer.",
+    "movie-image": "../img/filme/san_andreas.jpg",
+    "movie-link": "https://www.netflix.com/de/title/80027980?s=i&trkid=258593161&vlang=de&clip=81147262"
+  },
+  "The Equalizer": {
+    "movie-title": "The Equalizer",
+    "movie-description": "Robert McCall, ein ehemaliger Geheimagent, lebt ein ruhiges Leben, bis er einer jungen Frau hilft, die von russischen Gangstern bedroht wird. Er nutzt seine Fähigkeiten, um Gerechtigkeit auf eigene Faust zu üben. Denzel Washington liefert eine beeindruckende Leistung als stoischer und tödlicher Rächer. Der Film ist voller intensiver Action und moralischer Dilemmata. McCall wird zu einem Symbol für unermüdliche Gerechtigkeit.",
+    "movie-image": "../img/filme/the_equalizer.jpg",
+    "movie-link": "https://www.netflix.com/de/title/70305892?s=i&trkid=258593161&vlang=de&clip=81723372"
+  },
+  "Aquaman": {
+    "movie-title": "Aquaman",
+    "movie-description": "Arthur Curry, halb Mensch und halb Atlanter, entdeckt sein Erbe als König von Atlantis. Er muss seine Kräfte nutzen, um seine Unterwasserwelt vor Bedrohungen zu schützen. Jason Momoa spielt die Hauptrolle in diesem visuell beeindruckenden Superheldenfilm. Der Film kombiniert Action, Abenteuer und eine epische Reise. Aquamans Kampf um seine Identität und sein Königreich steht im Mittelpunkt der Geschichte.",
+    "movie-image": "../img/filme/aquaman.jpg",
+    "movie-link": "https://www.amazon.de/Aquaman-Jason-Momoa/dp/B0B8MRXS6S/ref=sr_1_1?crid=39M18X2L6OZM&dib=eyJ2IjoiMSJ9.IgIyKGCgjW6C0wGeagZgj1fkeZI31LAM6eDnsR_mDHJTPhfGqK8wWEoBBINTFDIxWc4SUF2A6xT9n5KoUfJBrV9Vo3yEZvzWHYOEpIdHqH8-reIe7A9YEhfh-V_nTtZ64iGgscqVTFCshfmKAWwu2qFSUXWlbtYti1CgTGT9JPZJ_RGSBQ9LL9DEeXAMQk_m_GEv4Z62spR9gwicZO8tMkDBtusHDW2o8yM08zhpdiY.015HaiRO3B8xnRdvDK57kr7PMXnh4mTRDmsH3WXaep8&dib_tag=se&keywords=aquaman&qid=1718665343&s=instant-video&sprefix=aqu%2Cinstant-video%2C161&sr=1-1"
+  },
+  "Pikachu": {
+    "movie-title": "Pikachu",
+    "movie-description": "In einer Welt, in der Menschen und Pokémon zusammenleben, schließt sich Tim Goodman mit Detective Pikachu zusammen, um das Geheimnis um das Verschwinden seines Vaters zu lösen. Pikachu, ein sprechendes und koffeinsüchtiges Pokémon, bringt Humor und Charme in den Film. Gemeinsam decken sie eine Verschwörung auf, die die gesamte Pokémon-Welt bedroht. Der Film ist eine Mischung aus Abenteuer, Mystery und Comedy. Fans der Pokémon-Franchise werden mit vielen bekannten Kreaturen und Referenzen belohnt.",
+    "movie-image": "../img/filme/pikachu.jpg",
+    "movie-link": "https://www.netflix.com/de/title/81037695?s=i&trkid=258593161&vlang=de"
+  },
+  "Chihiros Reise ins Zauberland": {
+    "movie-title": "Chihiros Reise ins Zauberland",
+    "movie-description": "Chihiro, ein junges Mädchen, gerät in eine mysteriöse und magische Welt, als sie und ihre Eltern in ein verlassenes Vergnügungspark geraten. Um ihre Eltern zu retten, die in Schweine verwandelt wurden, muss sie in einem Badehaus für Geister und Götter arbeiten. Der Film von Hayao Miyazaki ist ein visuell atemberaubendes Meisterwerk voller Fantasie und Tiefe. Chihiros Abenteuer ist eine Reise des Wachstums und der Selbstentdeckung. Der Film ist ein zeitloses Werk des Animationskinos.",
+    "movie-image": "../img/filme/chihiros_reise_ins_zauberland.jpg",
+    "movie-link": "https://www.netflix.com/de/title/60023642?s=i&trkid=258593161&vlang=de&clip=81253494"
+  },
+  "Jumanji": {
+    "movie-title": "Jumanji",
+    "movie-description": "Vier Teenager werden in ein magisches Videospiel gesogen und müssen als ihre Avatare eine gefährliche Welt überleben. Mit Hilfe ihrer neuen Fähigkeiten und Teamarbeit versuchen sie, das Spiel zu beenden und in die reale Welt zurückzukehren. Der Film bietet eine Mischung aus Abenteuer, Action und Humor. Dwayne Johnson, Kevin Hart, Jack Black und Karen Gillan spielen die Hauptrollen. Die Geschichte ist ein spannendes und lustiges Abenteuer für die ganze Familie.",
+    "movie-image": "../img/filme/jumanji.jpg",
+    "movie-link": "https://www.netflix.com/de/title/60023642?s=i&trkid=258593161&vlang=de&clip=81253494"
+  },
+  "Ghost Rider": {
+    "movie-title": "Ghost Rider",
+    "movie-description": "Johnny Blaze, ein Stunt-Motorradfahrer, verkauft seine Seele dem Teufel und wird zum Ghost Rider, einem brennenden Skelett auf einem Motorrad. Er nutzt seine neuen Kräfte, um das Böse zu bekämpfen und seine Seele zurückzufordern. Nicolas Cage spielt die Hauptrolle in diesem düsteren Superheldenfilm. Der Film kombiniert Elemente von Horror, Action und Fantasy. Ghost Rider ist eine ikonische Figur, die für ihre Flammen und Rache bekannt ist.",
+    "movie-image": "../img/filme/ghost_rider.jpg",
+    "movie-link": "https://www.amazon.de/Ghost-Rider-Vengeance-Nicolas-Cage/dp/B00X5O6FQQ/ref=sr_1_1?crid=3MU4COUH4T1L6&dib=eyJ2IjoiMSJ9.ZcCJPxLmnLmiF1pPQdL4aEPYCixOP7YTVXBgF8wvmJ7hvoq7kN4YS9Zkgn15rU9E1grunZh2J9JmZFhczqL1FHiXSm1n4nMLpQSq0bz4HYvYJbgZMpG7GiSX_8VW3nGxLfULHBM-RqhRLgEwrdnoCoR9qd4PUqHWlRvDjx4274sinOFqmtpXqwFYG_23GXD7PVVIJyKziWzvs-_9-Jf6fWqFeYCad2oeQ6SwZMoQOXc.HjsX0XnuTbU6h7QxcCDhIMyGFcTALabJomMkM5gdSRU&dib_tag=se&keywords=ghost+rider&qid=1718665377&s=instant-video&sprefix=ghost+rid%2Cinstant-video%2C158&sr=1-1"
+  }
+}

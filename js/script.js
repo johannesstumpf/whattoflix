@@ -1,36 +1,52 @@
+// =========================================================
+// Funktion zur Anpassung des Headers beim Scrollen der Seite
+// Quelle: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+// =========================================================
 window.onscroll = function () {
   scrollFunction();
 };
-
 function scrollFunction() {
   var header = document.getElementById("header");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    header.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; // Leicht transparenter schwarzer Hintergrund
+    header.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
   } else {
-    header.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Transparenter Hintergrund
+    header.style.backgroundColor = "rgba(0, 0, 0, 0)";
   }
 }
 
-// Current Question ID gets extracted from the URL
+// =========================================================
+// Extrahiert die aktuelle Frage-ID aus der URL
+// Promt: 3.1.1
+// =========================================================
 function getQuestionId() {
   const url = window.location.href;
   const questionId = url.match(/frage(\d+)\.html/)[1];
   return parseInt(questionId);
 }
 
-// Loop through all buttons with class "answer" and add event listener "click"
+// =========================================================
+// Durchläuft alle Buttons mit der Klasse "answer" und fügt den Eventlistener "click" hinzu
+// Quelle: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+// =========================================================
 document.querySelectorAll(".answer").forEach((button) => {
   button.addEventListener("click", () => {
     const questionId = getQuestionId();
     const nextQuestionId = questionId + 1;
 
-    // Store data-value (see frage1.html) to localStorage
+    // =========================================================
+    // Speichert den data-value (siehe frage1.html) im localStorage
+    // Quelle: https://www.w3schools.com/jsref/met_storage_setitem.asp
+    // =========================================================
     localStorage.setItem(
       "question" + questionId,
       button.getAttribute("data-value")
     );
 
-    // After data-value is stored redirect to next question (fragen + nextQuestionId + .html)
+    // =========================================================
+    // Nachdem data-value gespeichert wurde, Weiterleitung zur nächsten Frage (frage + nextQuestionId + .html)
+    // Quelle: https://www.w3schools.com/js/js_window_location.asp
+    // Promt: 3.1.2
+    // =========================================================
     if (nextQuestionId <= 5) {
       window.location.href = `frage${nextQuestionId}.html`;
     } else {
@@ -39,7 +55,10 @@ document.querySelectorAll(".answer").forEach((button) => {
   });
 });
 
-// Rating films
+// =========================================================
+// Bewertung der Filme
+// Promt: 3.1.3
+// =========================================================
 const quizData = {
   questions: [
     {
@@ -317,11 +336,13 @@ const quizData = {
   ],
 };
 
-// getting userAnswers from localStorage by iterating over all keys
+// =========================================================
+// Holt die Benutzerantworten aus dem localStorage
+// Prompt: 3.1.4
+// =========================================================
 let userAnswers = {};
 
 for (let i = 0; i < localStorage.length; i++) {
-  // get localStorage key by index (0,1,2,3,...)
   let key = localStorage.key(i);
 
   if (key.includes("question")) {
@@ -329,14 +350,15 @@ for (let i = 0; i < localStorage.length; i++) {
   }
 }
 
-// Calculating difference between the user answers and the movie ratings
+// =========================================================
+// Berechnet für jeden Film den Score basierend auf den Differenzen zwischen den Benutzerantworten und den Film-Bewertungen
+// Quelle: https://www.w3schools.com/jsref/jsref_abs.asp
+// Quelle: https://www.w3schools.com/jsref/jsref_push.asp
+// Promt: 3.1.5
+// =========================================================
 let movieScores = [];
-
 quizData.movies.forEach((movie) => {
-  // Setting score to 0 for each movie
   let score = 0;
-
-  // TODO: Calculate the score by iterating to 5
   quizData.questions.forEach((question) => {
     let answerValue = userAnswers[`question${question.id}`];
 
@@ -351,16 +373,18 @@ quizData.movies.forEach((movie) => {
   });
 });
 
-// Sort movies by score
+// =========================================================
+// Sortiert die Filme nach ihrem Score
+// Quelle: https://www.w3schools.com/jsref/jsref_sort.asp
+// =========================================================
 movieScores.sort((a, b) => a.score - b.score);
 console.log(movieScores);
 
-// Beste Empfehlung ausgeben
+// =========================================================
+// Gibt die beste Empfehlung aus
+// Quelle:
+// =========================================================
 let bestMovie = movieScores[0];
-
-console.log(
-  `Wir empfehlen dir den Film: ${bestMovie.title} mit einem Score von: ${bestMovie.score}`
-);
 
 // Wert in localStorage speichern
 localStorage.setItem("bestMovieTitle", bestMovie.title);

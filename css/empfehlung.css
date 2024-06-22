@@ -89,18 +89,18 @@ body.empfehlung-background {
 .film-button1 {
   background-color: #e50914;
   color: #ffffff;
-  padding: 0.625rem 1.25rem; /* Innenabstand oben/unten 10px, links/rechts 20px */
+  padding: 0.625rem 1.25rem; 
   border: 0rem solid #e50914;
   font-family: Netflix Light;
   font-size: 2.5rem;
   text-decoration: none;
   margin-right: 2.5rem;
-  border-radius: 0.313rem; /* Rundet die Ecken ab */
-  transition: background-color 0.3s ease; /* Übergangseffekt für die Hintergrundfarbe */
+  border-radius: 0.313rem; 
+  transition: background-color 0.3s ease; 
 }
 
 .film-button1:hover {
-  background-color: rgba(229, 9, 20, 0.7);
+  background-color: var(--primary-color);
   border: rgba(229, 9, 20, 0);
 }
 
@@ -120,9 +120,17 @@ body.empfehlung-background {
   background-color: #fbd900cb;
 }
 
+.lottie {
+  position: fixed; 
+  top: 20%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 99; 
+}
+
 @media only screen and (max-width: 1100px) {
   h1 {
-    margin-top: 5rem; /* Abstand zum oberen Rand */
+    margin-top: 5rem; 
   }
 
   .empfehlung-background {

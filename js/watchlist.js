@@ -1,37 +1,43 @@
 async function updateWatchlist() {
-  // Get watchlist items from localStorage (function from global.js)
+  // Holen der Watchlist-Einträge aus dem localStorage (Funktion aus global.js)
   const watchlist = getWatchlist();
   console.log(watchlist);
 
-  // Get the container where the Watchlist items will be displayed
+  // =========================================================
+  // Holen des Containers, in dem die Watchlist-Einträge angezeigt werden
+  // Quelle: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+  // =========================================================
   const container = document.getElementById("WatchlistContainer");
   const noMoviesMessage = document.getElementById("no-movies-message");
   const currentMovieTitle = document.getElementById("current-movie-title");
   const sliderControls = document.getElementById("slider-controls");
 
-  // Clear previous items in the container
+  // =========================================================
+  // Vorherige Einträge im Container löschen
+  // Promt: 3.7.2
+  // =========================================================
   container.innerHTML = "";
 
   if (watchlist.length === 0) {
-    // Show "No movies" message if watchlist is empty
+    // "Keine Filme" Nachricht anzeigen, wenn die Watchlist leer ist
     noMoviesMessage.style.display = "block";
     currentMovieTitle.style.display = "none";
     sliderControls.style.display = "none";
   } else {
-    // Hide "No movies" message if watchlist is not empty
+    // "Keine Filme" Nachricht ausblenden, wenn die Watchlist nicht leer ist
     noMoviesMessage.style.display = "none";
     currentMovieTitle.style.display = "block";
     sliderControls.style.display = "flex";
 
-    // Create a new item for each movie (loop for each movie in the watchlist)
+    // Für jeden Film einen neuen Eintrag erstellen (Schleife für jeden Film in der Watchlist)
     for (let movieTitle of watchlist) {
       const movieData = await getMovieData(movieTitle);
 
-      // Create a new slide element
+      // Neues Slide-Element erstellen
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide", "tranding-slide");
 
-      // Create the slide content
+      // Slide-Inhalt erstellen
       const slideContent = `
         <div class="tranding-slide-img">
           <img src="${movieData["movie-image"]}" alt="${movieData["movie-title"]}" />
@@ -42,20 +48,23 @@ async function updateWatchlist() {
         <span class="movie-title" style="display:none;">${movieData["movie-title"]}</span>
       `;
 
-      // Append the content to the slide
+      // Inhalt dem Slide hinzufügen
       slide.innerHTML = slideContent;
 
-      // Append the slide to the container
+      // Slide dem Container hinzufügen
       container.appendChild(slide);
     }
 
-    // Initialize the Swiper instance after adding all slides
-    var TrandingSlider = new Swiper('.tranding-slider', {
-      effect: 'coverflow',
+    // =========================================================
+    // Initialisieren der Swiper-Instanz nach dem Hinzufügen aller Slides
+    // Quelle: Slider basierend auf https://www.youtube.com/watch?v=li-ylRo7VEc&t=44s&ab_channel=cods
+    // =========================================================
+    var TrandingSlider = new Swiper(".tranding-slider", {
+      effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      loop: watchlist.length > 1, // Enable looping only if more than one slide
-      slidesPerView: 'auto',
+      loop: watchlist.length > 1,
+      slidesPerView: "auto",
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -63,51 +72,66 @@ async function updateWatchlist() {
         modifier: 2.5,
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
       on: {
         slideChange: function () {
           var currentIndex = this.realIndex;
-          var titles = document.querySelectorAll('.swiper-slide .movie-title');
-          var links = document.querySelectorAll('.swiper-slide .movie-link');
+          var titles = document.querySelectorAll(".swiper-slide .movie-title");
+          var links = document.querySelectorAll(".swiper-slide .movie-link");
           var activeTitle = titles[currentIndex];
-          var centeredTitle = document.querySelector('#current-movie-title .movie-titel');
+          var centeredTitle = document.querySelector(
+            "#current-movie-title .movie-titel"
+          );
           centeredTitle.textContent = activeTitle.textContent;
-          document.getElementById('open-movie-link').href = links[currentIndex].href;
-        }
+          document.getElementById("open-movie-link").href =
+            links[currentIndex].href;
+        },
       },
       loopAdditionalSlides: 5,
     });
 
-    // Set initial title and link
-    var initialTitles = document.querySelectorAll('.swiper-slide .movie-title');
-    var initialLinks = document.querySelectorAll('.swiper-slide .movie-link');
-    document.querySelector('#current-movie-title .movie-titel').textContent = initialTitles[0].textContent;
-    document.getElementById('open-movie-link').href = initialLinks[0].href;
+    // =========================================================
+    // Setzen des initialen Titels und Links
+    // Quelle: https://www.youtube.com/watch?v=OSficvLDefM
+    // Quelle: https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+    // =========================================================
+    var initialTitles = document.querySelectorAll(".swiper-slide .movie-title");
+    var initialLinks = document.querySelectorAll(".swiper-slide .movie-link");
+    document.querySelector("#current-movie-title .movie-titel").textContent =
+      initialTitles[0].textContent;
+    document.getElementById("open-movie-link").href = initialLinks[0].href;
 
-    // Add event listener to the remove button
-    document.getElementById('remove-movie-button').addEventListener('click', function(event) {
-      event.preventDefault();
-      const currentIndex = TrandingSlider.realIndex;
-      const titles = document.querySelectorAll('.swiper-slide .movie-title');
-      const titleToRemove = titles[currentIndex].textContent;
-      removeFromWatchlist(titleToRemove);
-      updateWatchlist();
-    });
+    // =========================================================
+    // Eventlistener für den Entfernungs-Button hinzufügen
+    // Quelle: 3.11
+    // =========================================================
+    document
+      .getElementById("remove-movie-button")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        const currentIndex = TrandingSlider.realIndex;
+        const titles = document.querySelectorAll(".swiper-slide .movie-title");
+        const titleToRemove = titles[currentIndex].textContent;
+        removeFromWatchlist(titleToRemove);
+        updateWatchlist();
+      });
   }
 }
 
-// Function to remove a movie from the watchlist
+// =========================================================
+// Funktion zum Entfernen eines Films aus der Watchlist
+// Quelle: 3.11
+// =========================================================
 function removeFromWatchlist(title) {
   let watchlist = getWatchlist();
-  watchlist = watchlist.filter(movieTitle => movieTitle !== title);
-  localStorage.setItem('watchlist', JSON.stringify(watchlist));
+  watchlist = watchlist.filter((movieTitle) => movieTitle !== title);
+  localStorage.setItem("watchlist", JSON.stringify(watchlist));
 }
 
-// Call the function to update the watchlist
 updateWatchlist();

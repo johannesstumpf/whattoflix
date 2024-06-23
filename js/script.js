@@ -224,7 +224,7 @@ const quizData = {
       },
     },
     {
-      title: "Through My Window",
+      title: "Through my Window",
       ratings: {
         action: 3,
         comedy: 1,

@@ -14,7 +14,7 @@ async function updateWatchlist() {
 
   // =========================================================
   // Vorherige Einträge im Container löschen
-  // Promt: 3.7.2
+  // Promt: 3.4.1
   // =========================================================
   container.innerHTML = "";
 
@@ -109,7 +109,7 @@ async function updateWatchlist() {
 
     // =========================================================
     // Eventlistener für den Entfernungs-Button hinzufügen
-    // Quelle: 3.11
+    // Prompt: 3.5
     // =========================================================
     document
       .getElementById("remove-movie-button")
@@ -126,7 +126,7 @@ async function updateWatchlist() {
 
 // =========================================================
 // Funktion zum Entfernen eines Films aus der Watchlist
-// Quelle: 3.11
+// Prompt: 3.5
 // =========================================================
 function removeFromWatchlist(title) {
   let watchlist = getWatchlist();

@@ -1,4 +1,7 @@
-/* Farbmanagement auf basis von: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* =========================================================
+Farbmanagement auf Basis von: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+========================================================= */
 :root {
   --primary-color: #e50914;
   --secondary-color: rgba(90, 90, 90, 0.6);
@@ -11,17 +14,17 @@
 
 @font-face {
   font-family: "Netflix Bold";
-  src: url(/fonts/Netflix_Sans_Bold.otf);
+  src: url("../fonts/Netflix_Sans_Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Netflix Medium";
-  src: url(/fonts/Netflix_Sans_Medium.otf);
+  src: url("../fonts/Netflix_Sans_Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Netflix Light";
-  src: url(/fonts/Netflix_Sans_Light.otf);
+  src: url("../fonts/Netflix_Sans_Light.otf") format("opentype");
 }
 
 h1,
@@ -54,7 +57,9 @@ a {
   box-sizing: border-box;
 }
 
-/* Startseite */
+/* =========================================================
+Startseite
+========================================================= */
 .text-start {
   font-size: 20dvh;
   margin: 2.5rem;
@@ -66,7 +71,7 @@ a {
 }
 
 .start-background {
-  background-image: url(/img/background_startseite.jpg);
+  background-image: url("../img/background_startseite.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-overlay);
@@ -78,7 +83,9 @@ a {
   text-align: center;
 }
 
-/* Buttons */
+/* =========================================================
+Buttons
+========================================================= */
 .primary-button,
 .secondary-button {
   padding: 0.625rem 1.25rem;

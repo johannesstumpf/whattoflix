@@ -23,14 +23,14 @@ async function updatePopularMovies() {
 
   // =========================================================
   // Leert vorherige Elemente im Container
-  // Promt: 3.7.2
+  // Promt: 3.4.1
   // =========================================================
   container.innerHTML = "";
 
   // =========================================================
   // Erstellt für jeden Film ein neues Element (Schleife für jeden Film in popularMovies)
   // Quelle: https://www.youtube.com/watch?v=OSficvLDefM
-  // Promt: 3.7.3
+  // Promt: 3.4.2
   // =========================================================
   for (let movieTitle of popularMovies) {
     const movieData = await getMovieData(movieTitle);

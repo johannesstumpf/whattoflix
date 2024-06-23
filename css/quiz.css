@@ -1,35 +1,37 @@
-/* Typografie und Farben */
-
+/* =========================================================
+Farbmanagement auf Basis von: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+========================================================= */
 :root {
-    --primary-color: #e50914;
-    --secondary-color: rgba(90, 90, 90, 0.6);
-    --background-overlay: rgba(0, 0, 0, 0.8);
-    --background-color: #0F0F0F;
-    --white-color: #ffffff;
-    --light-grey: #e5e5e5;
-    --menu-background: #0f0f0f;
-    --color1: #ffffff;
+  --primary-color: #e50914;
+  --secondary-color: rgba(90, 90, 90, 0.6);
+  --background-overlay: rgba(0, 0, 0, 0.8);
+  --background-color: #0f0f0f;
+  --white-color: #ffffff;
+  --light-grey: #e5e5e5;
+  --menu-background: #0f0f0f;
+  --color1: #ffffff;
 }
 
 @font-face {
-    font-family: Netflix Bold;
-    src: url(/fonts/Netflix_Sans_Bold.otf);
+  font-family: "Netflix Bold";
+  src: url("../fonts/Netflix_Sans_Bold.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Netflix Medium;
-    src: url(/fonts/Netflix_Sans_Medium.otf);
+  font-family: "Netflix Medium";
+  src: url("../fonts/Netflix_Sans_Medium.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Netflix Light;
-    src: url(/fonts/Netflix_Sans_Light.otf);
+  font-family: "Netflix Light";
+  src: url("../fonts/Netflix_Sans_Light.otf") format("opentype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -37,203 +39,209 @@ h2,
 h3,
 h4,
 p {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 h1 {
-    font-family: Netflix Bold;
+  font-family: Netflix Bold;
 }
 
 h2 {
-    font-family: Netflix Medium;
+  font-family: Netflix Medium;
 }
 
 p {
-    font-family: Netflix Light;
+  font-family: Netflix Light;
 }
 
 a {
-    font-family: Netflix Light;
+  font-family: Netflix Light;
 }
 
-/* Quiz Elemente */
-
+/* =========================================================
+Quiz Elemente
+========================================================= */
 .main-container {
-    min-height: calc(100vh - 6rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .profiles {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.875rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.875rem;
 }
 
 .profile {
-    max-width: 12rem;
+  max-width: 12rem;
 }
 
 .profile a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.profile, .profile img, .profile p {
-    border-radius: 0.5rem;
+.profile,
+.profile img,
+.profile p {
+  border-radius: 0.5rem;
 }
 
-.profile, .profile:hover {
-    cursor: pointer;
+.profile,
+.profile:hover {
+  cursor: pointer;
 }
 
 .profile img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .profile:hover img {
-    border: 2px solid var(--white-color);
+  border: 2px solid var(--white-color);
 }
 
 .profile p {
-    margin-top: 0.625rem;
-    font-size: 0.938rem;
-    color: var(--white-color);
-    text-align: center;
+  margin-top: 0.625rem;
+  font-size: 0.938rem;
+  color: var(--white-color);
+  text-align: center;
 }
 
 .profile:hover .benutzername,
 .profile .benutzername {
-    color: rgb(201, 201, 201);
+  color: rgb(201, 201, 201);
 }
 
 .profile:hover .benutzername {
-    color: #ffffffed;
+  color: #ffffffed;
 }
 
 .frage {
-    text-align: center;
-    margin-bottom: 1.875rem;
-    font-family: Netflix Light;
-    font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.875rem;
+  font-family: Netflix Light;
+  font-size: 3rem;
 }
 
 .fade-in {
-    animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .quiz-background {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .answer {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .highlight {
-    color: var(--primary-color);
-    font-family: Netflix Light;
+  color: var(--primary-color);
+  font-family: Netflix Light;
 }
 
 .loading-overlay {
-    position: fixed;
-    top: 0px; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--background-overlay);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-overlay);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .loading-overlay.active {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .loading-message {
-    color: var(--white-color);
-    font-family: Netflix Light;
-    font-size: 1.5rem;
-    margin-bottom: 20px; 
+  color: var(--white-color);
+  font-family: Netflix Light;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .loading-bar-container {
-    width: 70%;
-    background-color: var(--light-grey);
-    border-radius: 25px;
-    overflow: hidden;
-    height: 2rem;
+  width: 70%;
+  background-color: var(--light-grey);
+  border-radius: 25px;
+  overflow: hidden;
+  height: 2rem;
 }
 
 .loading-bar {
-    height: 100%;
-    width: 0;
-    background-color: var(--primary-color);
-    border-radius: 25px 0 0 25px;
-    transition: width 0.5s ease;
+  height: 100%;
+  width: 0;
+  background-color: var(--primary-color);
+  border-radius: 25px 0 0 25px;
+  transition: width 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        margin-top: 5rem;
-    }
+  h1 {
+    margin-top: 5rem;
+  }
 
-    .frage {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+  .frage {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-    .profiles {
-        justify-content: center;
-        gap: 1rem;
-    }
+  .profiles {
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .profile {
-        width: 40%;
-        max-width: none;
-    }
+  .profile {
+    width: 40%;
+    max-width: none;
+  }
 
-    .profile p {
-        font-size: 1rem;
-    }
+  .profile p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .frage {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
+  .profiles {
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .frage {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
+  .profile {
+    width: 32%;
+    max-width: none;
+  }
 
-    .profiles {
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .profile {
-        width: 32%;
-        max-width: none;
-    }
-
-    .profile p {
-        font-size: 1rem;
-    }
+  .profile p {
+    font-size: 1rem;
+  }
 }

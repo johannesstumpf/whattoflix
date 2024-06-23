@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhatToFlix - Empfehlung</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="/css/empfehlung.css" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="css/empfehlung.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<body class="empfehlung-background">
+  <body class="empfehlung-background">
     <header class="fixed-header">
-        <div id="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="WhatToFlix Logo" />
-            </a>
-        </div>
-        <nav>
-            <input type="checkbox" id="check" aria-label="Menü" />
-            <label for="check" class="open-menu">
-                <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-                <span class="sr-only">Menü öffnen</span>
+      <div id="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="WhatToFlix Logo" />
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="check" aria-label="Menü" />
+        <label for="check" class="open-menu">
+          <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+          <span class="sr-only">Menü öffnen</span>
+        </label>
+        <ul class="main-nav">
+          <li><a href="beliebte-filme.html">Beliebte Filme</a></li>
+          <li><a href="watchlist.html">Meine Liste</a></li>
+          <li>
+            <label for="check" class="close-menu">
+              <i class="fa fa-close fa-3x" aria-hidden="true"></i>
+              <span class="sr-only">Menü schließen</span>
             </label>
-            <ul class="main-nav">
-                <li><a href="/beliebte-filme.html">Beliebte Filme</a></li>
-                <li><a href="/watchlist.html">Meine Liste</a></li>
-                <li><label for="check" class="close-menu">
-                    <i class="fa fa-close fa-3x" aria-hidden="true"></i>
-                    <span class="sr-only">Menü schließen</span>
-                </label></li>
-            </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="lottie"> 
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-							<dotlottie-player 
-								src="https://lottie.host/b4752f64-cbbc-4230-936d-5cf20611904b/TPx9fZ0M1U.json" 
-								background="transparent"
-								speed="1"
-								style="width: 300px; height: 300px"
-								direction="1"
-								mode="normal"
-								autoplay
-							></dotlottie-player>
+      <div class="lottie">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <dotlottie-player
+          src="https://lottie.host/b4752f64-cbbc-4230-936d-5cf20611904b/TPx9fZ0M1U.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          direction="1"
+          mode="normal"
+          autoplay
+        ></dotlottie-player>
+      </div>
+      <section class="empfehlung-content" id="image">
+        <div class="empfehlung-content">
+          <h1 class="dein-film">Dein Film:</h1>
+          <h2 class="filmtitel" id="movie-title"></h2>
+          <p class="empfehlung-content" id="movie-description"></p>
+          <div class="button-container">
+            <a href="#" class="film-button1" id="movie-link" target="_blank">
+              Film öffnen
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a
+              href="watchlist.html"
+              id="watchlist-button"
+              class="secondary-button"
+            >
+              <i class="fa-solid fa-circle-plus"></i> Zur Watchlist hinzufügen
+            </a>
+          </div>
         </div>
-        <section class="empfehlung-content" id="image">
-            <div class="empfehlung-content">
-                <h1 class="dein-film">Dein Film:</h1>
-                <h2 class="filmtitel" id="movie-title"></h2>
-                <p class="empfehlung-content" id="movie-description"></p>
-                <div class="button-container">
-                    <a href="#" class="film-button1" id="movie-link" target="_blank">
-                        Film öffnen
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                    <a href="watchlist.html" id="watchlist-button" class="secondary-button">
-                        <i class="fa-solid fa-circle-plus"></i> Zur Watchlist hinzufügen
-                    </a>
-                </div>
-            </div>
-        </section>
+      </section>
     </main>
-    
-    <script src="/js/global.js"></script>
-    <script src="/js/empfehlung.js"></script>
-    <script src="/js/random.js"></script>
-    <script src="/js/popular.js"></script>
-    <script src="/js/watchlist.js"></script>
-</body>
+
+    <script src="js/global.js"></script>
+    <script src="js/empfehlung.js"></script>
+    <script src="js/random.js"></script>
+    <script src="js/popular.js"></script>
+    <script src="js/watchlist.js"></script>
+  </body>
 </html>

@@ -67,7 +67,7 @@ function addToWatchlist(movieTitle) {
 // Holt Filmdaten aus der JSON-Datei
 // Quelle1: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 // Quelle2: https://jakearchibald.com/2017/await-vs-return-vs-return-await/
-// Promt: 3.7.4
+// Promt: 3.7.2
 // =========================================================
 async function getMovieData(movieTitle) {
   return await fetch("/data/filme.json")
@@ -79,7 +79,7 @@ async function getMovieData(movieTitle) {
 
 // =========================================================
 // Behandelt Klick-Ereignisse auf "Mehr anzeigen" und "Weniger anzeigen" Links innerhalb jedes Filmelements
-// Promt: 3.7.5
+// Promt: 3.7.3
 // =========================================================
 document.addEventListener("DOMContentLoaded", function () {
   document

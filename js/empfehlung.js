@@ -90,7 +90,7 @@ function isInWatchlistInStorage(movieTitle) {
 }
 
 // =========================================================
-// Beispiel für die addToWatchlist-Funktion
+// Film zur Watchlist hinzufügen
 // Promt: 3.2.3
 // =========================================================
 function addToWatchlist(movieTitle) {
@@ -102,7 +102,7 @@ function addToWatchlist(movieTitle) {
 }
 
 // =========================================================
-// Beispiel für die removeFromWatchlist-Funktion
+// Film aus der Watchlist entfernen
 // Promt: 3.2.4
 // =========================================================
 function removeFromWatchlist(movieTitle) {

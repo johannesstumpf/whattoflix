@@ -1,4 +1,7 @@
-/* Farbmanagement auf basis von: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* =========================================================
+Farbmanagement auf Basis von: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+========================================================= */
 :root {
   --primary-color: #e50914;
   --secondary-color: rgba(90, 90, 90, 0.6);
@@ -11,20 +14,22 @@
   --grey: #b9b9b9;
 }
 
-/* Typografie und Farben */
+/* =========================================================
+Typografie und Farben
+========================================================= */
 @font-face {
-  font-family: Netflix Bold;
-  src: url(/fonts/Netflix_Sans_Bold.otf);
+  font-family: "Netflix Bold";
+  src: url("../fonts/Netflix_Sans_Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Netflix Medium;
-  src: url(/fonts/Netflix_Sans_Medium.otf);
+  font-family: "Netflix Medium";
+  src: url("../fonts/Netflix_Sans_Medium.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Netflix Light;
-  src: url(/fonts/Netflix_Sans_Light.otf);
+  font-family: "Netflix Light";
+  src: url("../fonts/Netflix_Sans_Light.otf") format("opentype");
 }
 
 h1,
@@ -70,7 +75,9 @@ a {
   margin-top: 1rem;
 }
 
-/* Slider basierend auf https://www.youtube.com/watch?v=li-ylRo7VEc&t=44s&ab_channel=cods */
+/* =========================================================
+Slider basierend auf https://www.youtube.com/watch?v=li-ylRo7VEc&t=44s&ab_channel=cods
+========================================================= */
 .slider {
   zoom: 60%;
   overflow: hidden;
@@ -135,7 +142,6 @@ a {
   transform: translateX(-58%) !important;
 }
 
-
 .tranding-slider-control .swiper-button-prev {
   left: 70%;
   transform: translateX(-70%);
@@ -192,7 +198,7 @@ a {
 
 .centered-title a {
   display: inline-block;
-  margin-top: 3rem; 
+  margin-top: 3rem;
 }
 
 .primary-button,
@@ -251,8 +257,6 @@ a {
   bottom: 1rem;
 }
 
-
-
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--light-grey);
 }
@@ -267,7 +271,9 @@ a {
   display: none;
 }
 
-/* Media Queries Quelle: Prompt 2.1 mit eigenen Anpassungen*/
+/* =========================================================
+Media Queries Quelle: Prompt 2.1 mit eigenen Anpassungen
+========================================================= */
 @media (max-width: 990px) {
   .tranding-slider-control .swiper-button-next {
     left: 70%;
@@ -376,10 +382,9 @@ a {
 }
 
 @media (max-width: 400px) {
-
   #tranding {
-    height: auto; 
-    padding: 1rem; 
+    height: auto;
+    padding: 1rem;
   }
 
   .tranding-slider-control {
@@ -387,7 +392,6 @@ a {
   }
 
   .section-heading {
-
     padding: 1.3rem 0;
   }
 }

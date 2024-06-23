@@ -1,4 +1,7 @@
-/* Farbmanagement auf basis von: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* =========================================================
+Farbmanagement auf Basis von: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+========================================================= */
 :root {
   --primary-color: #e50914;
   --secondary-color: rgba(90, 90, 90, 0.6);
@@ -8,22 +11,22 @@
   --menu-background: #0f0f0f;
   --color1: #ffffff;
 }
-
-/* Typografie und Farben */
-
+/* =========================================================
+Typografie und Farben
+========================================================= */
 @font-face {
   font-family: "Netflix Bold";
-  src: url(/fonts/Netflix_Sans_Bold.otf);
+  src: url("../fonts/Netflix_Sans_Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Netflix Medium";
-  src: url(/fonts/Netflix_Sans_Medium.otf);
+  src: url("../fonts/Netflix_Sans_Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Netflix Light";
-  src: url(/fonts/Netflix_Sans_Light.otf);
+  src: url("../fonts/Netflix_Sans_Light.otf") format("opentype");
 }
 
 h1,
@@ -52,7 +55,9 @@ p {
   box-sizing: border-box;
 }
 
-/* Empfehlung */
+/* =========================================================
+Empfehlung
+========================================================= */
 
 body.empfehlung-background {
   background-color: var(--background-overlay, black);
@@ -89,14 +94,14 @@ body.empfehlung-background {
 .film-button1 {
   background-color: #e50914;
   color: #ffffff;
-  padding: 0.625rem 1.25rem; 
+  padding: 0.625rem 1.25rem;
   border: 0rem solid #e50914;
   font-family: Netflix Light;
   font-size: 2.5rem;
   text-decoration: none;
   margin-right: 2.5rem;
-  border-radius: 0.313rem; 
-  transition: background-color 0.3s ease; 
+  border-radius: 0.313rem;
+  transition: background-color 0.3s ease;
 }
 
 .film-button1:hover {
@@ -121,16 +126,16 @@ body.empfehlung-background {
 }
 
 .lottie {
-  position: fixed; 
-  top: 20%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  z-index: 99; 
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
 @media only screen and (max-width: 1100px) {
   h1 {
-    margin-top: 5rem; 
+    margin-top: 5rem;
   }
 
   .empfehlung-background {
@@ -168,9 +173,8 @@ body.empfehlung-background {
 }
 
 @media only screen and (max-width: 400px) {
-
   h1 {
-    margin-top: 3rem; 
+    margin-top: 3rem;
   }
 
   .dein-film {
@@ -182,5 +186,4 @@ body.empfehlung-background {
     font-size: 2.7rem;
     line-height: 2.7rem;
   }
-
 }

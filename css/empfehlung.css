@@ -166,3 +166,21 @@ body.empfehlung-background {
     display: block;
   }
 }
+
+@media only screen and (max-width: 400px) {
+
+  h1 {
+    margin-top: 3rem; 
+  }
+
+  .dein-film {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .filmtitel {
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+  }
+
+}

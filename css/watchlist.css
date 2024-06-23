@@ -93,9 +93,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: rem;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 #tranding .tranding-slider {
@@ -133,8 +131,14 @@ a {
 }
 
 .tranding-slider-control .swiper-button-next {
-  left: 58%;
-  transform: translateX(-58%);
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+
+.tranding-slider-control .swiper-button-prev {
+  left: 70%;
+  transform: translateX(-70%);
 }
 
 .centered-title {
@@ -188,7 +192,7 @@ a {
 
 .centered-title a {
   display: inline-block;
-  margin-top: rem; 
+  margin-top: 3rem; 
 }
 
 .primary-button,
@@ -206,7 +210,7 @@ a {
 .primary-button {
   background-color: var(--primary-color);
   color: var(--white-color);
-  margin: 0rem .5rem;
+  margin: 0rem 2.5rem;
 }
 
 .primary-button:hover {
@@ -246,6 +250,8 @@ a {
   width: 15rem;
   bottom: 1rem;
 }
+
+
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--light-grey);
